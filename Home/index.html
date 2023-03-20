@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Movie List</title>
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body">
+        <div class="container py-2">
+            <a class="navbar-brand fw-semibold nav-title ms-2" href="/Home/index.html">FakeMovie<span class="nav-title2">List</span></a>
+
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link selected-nav-link" aria-current="page" href="/Home/index.html"><i
+                                class="fa-solid fa-film pe-2"></i>Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Favorite/favorite.html"><i class="fa-solid fa-heart pe-2"></i>Favorites</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Search Bar & Movie List-->
+    <div class="container mt-5">
+        <div class="d-flex flex-column align-items-center">
+            <!-- Search Bar-->
+            <div class="row w-100 d-flex pb-5">
+                <form class="col-8 d-flex justify-content-start" id="search-form">
+                    <div>
+                        <label class="visually-hidden" for="search-input">MovieName</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-pill border-0 py-2 ps-3 pe-5 me-3"
+                                id="search-input" placeholder="Movie name...">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn search-btn px-4 py-2 rounded-pill fw-semibold"><i
+                                class="fa-solid fa-magnifying-glass"></i><span
+                                class="d-none d-lg-inline ps-2">Search</span></button>
+                    </div>
+                </form>
+                <div id="style-bar" class="col-4 d-flex justify-content-end fs-3">
+                    <a class="switch-style-btn text-decoration-none" href="#"><i id="card-style" 
+                            class="fa-solid fa-table-cells-large p-2 ps-3"></i></a>
+                    <a class="switch-style-btn  text-decoration-none" href="#"><i id="line-style" class="fa-solid fa-bars p-2 ps-3"></i></a>
+                </div>
+            </div>
+            <!-- blank margin -->
+            <div class="row my-4"></div>
+            <!-- Movie List -->
+            <div class="row w-100 d-flex justify-content-center" id="data-panel">
+
+                <!-- Render Movie Cards -->
+                <div class="col-auto col-xl-3">
+                    <div class="card d-flex flex-column align-items-center mb-3 rounded-5 border border-0 single-card-group">
+                        <img src="https://webdev.alphacamp.io/posters/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg"
+                            class="card-img-top w-75 mt-5 mb-3 border border-warning rounded-2 movie-image" alt="...">
+                        
+                        <div class="card-body w-100 d-flex justify-content-between">
+                            <p class="card-text mt-1 mb-3">Tudor</p>
+                            <a href="#" class="card-link text-decoration-none fs-3 pe-3 mb-4 mt-0"><i id="favorite-btn"
+                                    class="fa-solid fa-heart pe-0 favorite-btn"></i></a>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- Render Movie lines -->
+                <ul class="list-group list-group-flush  w-75 mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent py-3">
+                        <div class="ms-2 me-auto">
+                            Tudor
+                        </div>
+                        <ul class="d-flex fs-3">
+                            <li>
+                                <a class="text-decoration-none movie-list-btn m-2" href="#"><i class="fa-solid fa-circle-info"></i></a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none favorite-btn m-2" href="#"><i class="fa-solid fa-heart "></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent py-3">
+                        <div class="ms-2 me-auto">
+                            Tudor
+                        </div>
+                        <ul class="d-flex fs-3">
+                            <li>
+                                <a class="text-decoration-none movie-list-btn m-2" href="#"><i class="fa-solid fa-circle-info"></i></a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none favorite-btn m-2" href="#"><i class="fa-solid fa-heart "></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                   
+            </div>
+        </div>
+    </div>
+    <!-- pagination -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center my-5" id="paginator">
+            <!-- <li class="page-item"><a class="page-link pagination-style rounded-0" href="#">1</a></li>
+            <li class="page-item"><a class="page-link pagination-style rounded-0" href="#">2</a></li>
+            <li class="page-item"><a class="page-link pagination-style rounded-0" href="#">3</a></li> -->
+        </ul>
+    </nav>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="movie-Modal" tabindex="-1" aria-labelledby="movie-Modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-5">
+                <div class="modal-body" id="movie-modal-body">
+                    <div class="row d-flex justify-content-end">
+                        <button type="button" class="btn-close my-2 me-3" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="row mb-5">
+
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="d-flex">
+                                <img id="movie-modal-image" src="https://webdev.alphacamp.io/posters/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg"
+                                    class="w-75 rounded-2 movie-modal-image border border-warning align-items-center"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-5 d-flex flex-column justify-content-center modal-textContent mt-3 ms-5">
+                            <h1 class="modal-title fw-semibold pb-3" id="movie-modal-name">Jurassic World: Fallen Kingdom</h1>
+                            <p><em id="movie-modal-date">release date: 2023/05/05</em></p>
+                            <p id="movie-modal-description" class="">Several years after the demise of Jurassic World, a volcanic eruption threatens the remaining dinosaurs on the island of
+                            Isla Nublar. Claire Dearing, the former park manager and founder of the Dinosaur Protection Group, recruits Owen Grady
+                            to help prevent the extinction of the dinosaurs once again.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Script -->
+    <!-- axios -->
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+    <!-- Customer Script -->
+    <script src="/Home/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
