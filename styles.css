@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* my setting */
+/* body */
+body {
+    background-color: rgba(255, 251, 244, 1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navbar */
+.nav-title {
+    letter-spacing: 0rem;
+    font-size: 1.3rem;
+    color: rgb(208, 164, 88);
+}
+
+.nav-title2 {
+    color: rgb(143, 112, 57);
+}
+
+.selected-nav-link {
+    color: rgb(208, 164, 88);
+    border-bottom: 1px solid rgb(208, 164, 88);
+}
+
+.selected-nav-link:hover {
+    color: rgb(143, 112, 57);
+}
+
+/* search bar */
+#search-input {
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+.search-btn {
+    color: rgba(56, 40, 11, 1);
+    background-color: rgba(255, 224, 171, 1);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.search-btn:hover {
+    background-color: rgb(208, 164, 88);
+}
+
+/* switch style */
+
+.switch-style-btn {
+    color: rgb(220, 220, 220);
+    transition: color 500ms;
+}
+
+.switch-style-btn:hover {
+    color: rgb(109, 109, 109);
+}
+
+.switch-style-btn-click {
+    color: rgb(0, 0, 0);
+}
+
+/* render card style */
+.single-card-group {
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+}
+
+.card-moviename {
+    color: rgb(208, 164, 88);
+}
+
+.favorite-btn {
+    color: rgb(241, 224, 196);
+    transition: color 500ms;
+}
+
+.favorite-btn:hover {
+    color: rgb(158, 122, 61);
+}
+
+.favorite-btn-click {
+    color: rgb(208, 164, 88);
+    transition: color 500ms;
+}
+
+
+/* render list style */
+.movie-list-btn {
+    color: rgb(208, 164, 88);
+    transition: color 500ms;
+}
+
+.movie-list-btn:hover {
+    color: rgb(158, 122, 61);
+}
+
+/* modal style */
+.movie-modal-image {
+    height: auto;
+    width: auto;
+    margin: 30px auto;
+}
+
+.modal-textContent h1 {
+    font-size: 26px;
+}
+
+.modal-textContent>p {
+    line-height: 30px;
+    text-align: left;
+}
+
+/* pagination */
+.pagination-style {
+    background-color: rgba(189, 64, 64, 0);
+    color: rgb(208, 164, 88);
+    border: 0px;
+}
+
+.pagination-style:hover {
+    background-color: rgba(208, 164, 88, 0.431);
+    color: rgb(208, 164, 88);
+}
+
+.pagination-style:focus {
+    background-color: rgba(208, 164, 88, 0);
+    color: rgb(208, 164, 88);
+    font-weight: bold;
+}
