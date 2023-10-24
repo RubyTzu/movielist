@@ -1,5 +1,6 @@
 # Movie List
 A simple web application for movie fanatic
+[Project Link](https://rubytzu.github.io/movielist/Home/index.html)  
 
 ---
 
